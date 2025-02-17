@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from flask import Flask, jsonify, render_template
 
-app = Flask(__name__, template_folder="C:/Users/Usuário/PycharmProjects/pythonProject/templates")
+app = Flask(__name__, template_folder="templates")
 
 # Palavra-chave exata
 PALAVRA_CHAVE = "CARF"
