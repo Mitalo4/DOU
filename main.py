@@ -72,4 +72,4 @@ def buscar():
     return jsonify({"data": datetime.today().strftime("%d-%m-%Y"), "links_encontrados": links})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)
