@@ -41,7 +41,7 @@ def buscar_no_dou():
 
                 # Acessar o artigo e verificar se contém "CARF"
                 try:
-                    response_artigo = requests.get(link_artigo_completo, headers=HEADERS)
+                    response_artigo = requests.get(link_artigo_completo, headers=HEADERS, verify=False)
                     response_artigo.raise_for_status()
                     soup_artigo = BeautifulSoup(response_artigo.text, 'html.parser')
                     texto_artigo = soup_artigo.get_text()
