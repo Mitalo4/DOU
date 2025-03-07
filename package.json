@@ -1,0 +1,4 @@
+npm init -y
+"scripts": {
+  "start": "node server.js"
+}
